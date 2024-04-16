@@ -55,8 +55,11 @@ function animate() {
 }
 animate();
 
+const spaceTexture = new THREE.TextureLoader().load('./space.jpg');
+scene.background = spaceTexture;
+
 // avatar
-const danitexture = new THREE.TextureLoader().load('dani.png');
+const danitexture = new THREE.TextureLoader().load('./dani.png');
 
 const dani = new THREE.Mesh(
     new THREE.BoxGeometry(3, 3, 3),
